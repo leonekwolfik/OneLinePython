@@ -14,5 +14,7 @@ Po kreskach — srebrna, obojętna...
 '''
 
 duplicates = re.findall('([^\s]*(?P<x>[^\s])(?P=x)[^\s]*)', text)
+duplicates2 = re.findall('([a-z]*(?P<x>[a-z])(?P=x)[a-z]*)', text)
 
 print(duplicates)
+print(duplicates2)
